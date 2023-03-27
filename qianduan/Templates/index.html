@@ -1,0 +1,77 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--  <head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>知识图谱查询</title>-->
+<!--  </head>-->
+<!--  <body>-->
+<!--    <h1>知识图谱查询</h1>-->
+<!--    <button id="function">function</button>-->
+<!--    <button id="event">incident</button>-->
+<!--    <button id="damage">damageTree</button>-->
+<!--    <div id="graph"></div>-->
+<!--&lt;!&ndash;    <script src="https://d3js.org/d3.v7.min.js"></script>&ndash;&gt;-->
+<!--    <script src="0307.js"></script>-->
+
+<!--    <script>-->
+<!--      function getGraph(type) {-->
+<!--        fetch('/get_graph?type=' + type)-->
+<!--          .then(response => response.json())-->
+<!--          .then(data => {-->
+<!--            console.log(data);-->
+<!--            // 在这里使用D3.js等可视化库将数据渲染到页面上-->
+<!--          });-->
+<!--      }-->
+<!--      document.getElementById('function').addEventListener('click', () => getGraph('function'));-->
+<!--      document.getElementById('event').addEventListener('click', () => getGraph('event'));-->
+<!--      document.getElementById('damage').addEventListener('click', () => getGraph('damage'));-->
+<!--    </script>-->
+<!--  </body>-->
+<!--</html>-->
+
+
+
+<!--&lt;!&ndash;JavaScript代码是保存在一个或多个.js文件中，然后在HTML文件中通过<script>标签引入。在浏览器中打开HTML文件后，JavaScript代码会被自动加载并运行。所以，确保你在HTML文件中正确引入了你的JavaScript文件，并在浏览器中打开了HTML文件&ndash;&gt;
+-->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Example</title>-->
+<!--&lt;!&ndash;    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>&ndash;&gt;-->
+<!--    <script src="0307.js"></script>-->
+
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>目标易损性领域知识库问答:</h1>-->
+<!--    <button id="function-btn">Function</button>-->
+<!--    <button id="incident-btn">Incident</button>-->
+<!--    <button id="damage-tree-btn">Damage Tree</button>-->
+<!--    <div id="result"></div>-->
+<!--    <script src="0307.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!---->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Button Click Example</title>
+  </head>
+  <body>
+    <h1>Button Click Example</h1>
+    <button type="button" id="function">Click Here</button>
+    <script>
+     document.getElementById('function').addEventListener('click',function(event){
+        event.preventDefault();
+        var question = prompt("please input your question:");
+        if (question != null && question.trim() !==''){
+            window.location.href = '/query' + encodeURIComponent(question); //重定向url地址
+        }
+       });
+        </script>
+      </body>
+    </html>

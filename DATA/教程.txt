@@ -1,0 +1,11 @@
+1.运行BuildTargetType.py文件
+2.运行BuildTarget.py文件
+3.运行BuildDamage.py文件
+4.运行BuildComponent.py文件
+这四个文件已经写好了，剩下的功能和毁伤树部分的代码还没写
+毁伤树部分很复杂，对应BuildIncident.py
+功能的部分父功能也有些复杂
+5.运行BUildIncident.py文件
+
+6.运行BuildFunction.py文件
+    运行两次，第一次创建节点和第二个query，第二次不创建节点，创建第三个query关系建立
